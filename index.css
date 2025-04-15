@@ -1,7 +1,12 @@
 @font-face { 
-    font-family: CollectorComic; src: url('./assets/fonts/CollectorComic.otf'); 
+    font-family: 'CollectorComicBold';
+    src: url('/assets/fonts/CollectorComicBold.otf') format('opentype');
 }
 
+@font-face { 
+    font-family: 'CollectorComic';
+    src: url('/assets/fonts/CollectorComic.woff2') format('woff2');
+}
 
 .topnav {
     padding-top: 0.5vw;
@@ -30,11 +35,18 @@
     border-radius: 0.5vw;
     transition: 0.25s ease-in-out;
 }
+.topnav button:active {
+    background-color: #cb005b;
+    color: white;
+    -webkit-text-stroke: 1.5px white;
+    transform: translate(0.25vw, 0.25vw);
+    box-shadow: 0.15vw 0px 0px 0.15vw #cb005b, -0.15vw 0px 0px 0.15vw #cb005b, 0px 0.15vw 0px 0.15vw #cb005b, 0px -0.15vw 0px 0.15vw #cb005b, 0.5vw 0.5vw 0px 0.5vw #2a002a;
+}
 
 body {
     overflow-x: hidden;
     font-family: 'CollectorComic';
-    background-color: #F387D3;
+    background-color: #FFB3EB;
     margin: 0;
 }
 body::-webkit-scrollbar{
@@ -182,7 +194,7 @@ h3 {
 
 h1 {
     user-select: none;
-    font-family: 'CollectorComic';
+    font-family: 'CollectorComicBold';
     font-size: 3vw;
 }
 #fakeLogo {
@@ -210,10 +222,6 @@ h1 {
     height: 28vw; 
     padding-top: 4vw; 
     height: 90vh;
-}
-
-.topnav .icon {
-    display: none;
 }
 
 .scrollContainer{
@@ -279,23 +287,23 @@ text {
     letter-spacing: -0.025vw;
     text-align: justify-all;
 }
-#genericButton {
-    color: #832087;
+.genericButton {
+    color: #fcf2ff;
     border: none;
     border-radius: 0.5vw;
     margin-top: 2vw;
     padding: 10px;
-    background-color: #EBA2EB;
+    background-color: #A800A8;
     font-family: 'CollectorComic';
     font-size: 2.5vw;
     transition: 0.25s;
 }
-#genericButton:hover {
-    background-color: #a800a8;
+.genericButton:hover {
+    background-color: #ff7bff;
     border-radius: 0.5vw;
-    color: #fcf2ff;
+    color: #832087;
 }
-#genericButton:active {
+.genericButton:active {
     transform: translate(10px,10px);
     box-shadow: 0.15vw 0px 0px 0.15vw #a800a8, -0.15vw 0px 0px 0.15vw #a800a8, 0px 0.15vw 0px 0.15vw #a800a8, 0px -0.15vw 0px 0.15vw #a800a8, 0.5vw 0.5vw 0px 0.5vw #2a002a;
 }
@@ -572,11 +580,6 @@ h2 {
     }
     #lll{
         width: 100vw !important;
-    }
-    .knowmore {
-        margin-left: 15vw !important;
-        width: 60vw !important;
-        height: 7vh !important;
     }
     #steve{
         height: 30vh !important;
