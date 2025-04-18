@@ -15,17 +15,8 @@
 		Scoopbio
 	</div>
 	<div>
-		<img id="strawberryScoopbioAvatar" src="/assets/media/strawberry_scoopbio_avatar.svg" style="width:9.5vw; position: fixed;">
 		<img id="strawberry" src="/assets/media/strawberry.svg" style="width:7vw; position: fixed;">
 	</div>
-	
-	<script>
-		const strawberryScoopbioAvatar = document.getElementById("strawberryScoopbioAvatar");
-		const strawberry = document.getElementById("strawberry");
-		strawberryScoopbioAvatar.style.top = window.innerHeight * 0.47 + 'px';
-		strawberryScoopbioAvatar.style.left = window.innerWidth * 0.7 + 'px';
-
-	</script>
 	<div class="topnav">
 		<nav id="desktopNav">
 			<button onclick="window.location.href='/';">Home</button>
@@ -44,8 +35,9 @@
 			<a href="project">Project</a>
 		</div>
 	</div>
+	<canvas id="mainSectionScoopbio"></canvas>
 	<div class="scrollContainer">
-		<div style="height: 95vh;" class="scrollChild">
+		<div class="scrollChild">
 			<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0 2.5vw; padding-bottom: 5vw;">
 				<h1>Scoopbio - Where Gut Health Meets Pure Joy</h1>
 				<text class="averageText">
@@ -56,11 +48,8 @@
 				</button>
 			</div>
 			<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0 2.5vw; padding-bottom: 5vw;">
-				<img id="hoverVideo" src="/assets/media/strawberry_scoopbio_clean.png" alt="Ice Cream" style="width: 28vw; height: auto; max-width: 1000px; max-height: 1000px; border-radius: 20px; margin-top: 2vw; margin-bottom: 2vw;" />
+				<img id="strawberryScoopbioClean" src="/assets/media/strawberry_scoopbio_clean.png" alt="Ice Cream" style="width: 28vw; height: auto; max-width: 1000px; max-height: 1000px; border-radius: 20px; margin-top: 2vw; margin-bottom: 2vw; position: fixed;" />
 			</div>
-		</div>
-		<div style="height: 95vh;" class="scrollChild">
-
 		</div>
 	</div>
 </body>

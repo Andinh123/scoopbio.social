@@ -11,18 +11,30 @@
     font-family: 'WinkyRough';
     src: url('https://fonts.gstatic.com/s/winkyrough/v1/t5tzIRwIMoSXA0WSPBjQxJzjxc0_NyCBbx8bVSVeMLhA.woff2') format('woff2');
 }
+#mainSectionScoopbio {
+    margin-left: 27vw;
+    margin-top: calc(50vh - 17vw);
+    border: 1px solid #e707af;
+    position: fixed;
+    width: 70vw;
+    height: fit-content;
+    z-index: 100;
+}
 .topnav {
     background-color: #ffdef6;
     padding: 0.5vw;
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
 }
 #iconTopNav {
     position: fixed;
     height: 5vw;
     width: 5vw;
     margin-left: 0.5vw;
+    z-index: 99;
 }
 .topnav button {
     font-family: 'WinkyRough';
@@ -56,6 +68,7 @@ body {
     font-family: 'WinkyRough';
     background-color: #FFB3EB;
     margin: 0;
+    height: 1000vh;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -89,8 +102,10 @@ h1 {
     display: none;
 }
 .scrollChild {
+    margin-top: 7vh;
     display: flex;
     align-items: center;
+    height: 100vh;
 }
 .scrollChild > * {
     width: 50vw;
